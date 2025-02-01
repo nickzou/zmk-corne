@@ -15,8 +15,10 @@
 include:
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
+    layout: five_column_transform
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
+    layout: five_column_transform
   - board: nice_nano_v2
     shield: settings_reset
 
