@@ -108,40 +108,39 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC       &kp Q           &kp W            &kp E               &kp R             &kp T        &y_capsword 0 Y  &kp U              &kp I                &kp O             &kp P               &kp BSPC
-&kp CAPSLOCK  &hm LEFT_ALT A  &hm LEFT_META S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G        &hm SQT H        &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_META L  &hm RIGHT_ALT SEMI  &kp RET
-&kp TAB       &kp Z           &kp X            &kp C               &kp V             &kp B        &kp N            &kp M              &kp COMMA            &kp DOT           &kp FSLH            &kp RSHFT
-                                               &lt 3 TAB           &lt 2 MINUS       &kp SPACE    &kp RET          &lt 1 BACKSPACE    &kp ESCAPE
+&hm LEFT_ALT A  &hm LEFT_META S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G        &hm SQT H        &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_META L  &hm RIGHT_ALT SEMI
+&kp Z           &kp X            &kp C               &kp V             &kp B        &kp N            &kp M              &kp COMMA            &kp DOT           &kp FSLH
+                                 &lt 3 TAB           &lt 2 MINUS       &kp SPACE    &kp RET          &lt 1 BACKSPACE    &kp ESCAPE
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &none  &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &none           &none           &none         &none            &none  &none
-&none  &none  &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &none  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &none           &none           &none         &none            &none  &none
-                            &none         &none         &trans          &trans          &none           &none
+&none  &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &none           &none           &none         &none            &none
+&none  &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &none           &none           &none         &none            &none
+                     &none         &none         &trans          &trans          &none           &none
             >;
         };
 
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp LS(N1)  &kp LS(N2)            &kp LS(N3)             &kp LS(N4)       &kp LS(N5)           &kp LS(N6)      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)     &none
-&none         &kp GRAVE   &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp EQUAL   &none       &none       &obj_operator  &none
-&bt BT_SEL 4  &kp TILDE   &kp PIPE              &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp UNDERSCORE  &kp PLUS    &none       &none       &arrow_func    &none
-                                                &none                  &none            &trans               &trans          &none       &none
+&kp LS(N1)  &kp LS(N2)            &kp LS(N3)             &kp LS(N4)       &kp LS(N5)           &kp LS(N6)      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&kp GRAVE   &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp EQUAL   &none       &none       &obj_operator
+&kp TILDE   &kp PIPE              &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp UNDERSCORE  &kp PLUS    &none       &none       &arrow_func
+                                  &none                  &none            &trans               &trans          &none       &none
             >;
         };
 
         arrow_layer {
             label = "3";
             bindings = <
-&none  &bt BT_CLR_ALL  &bt BT_SEL 0  &none  &sys_reset  &none          &kp C_PP      &kp C_MUTE       &none  &none  &none  &none
-&none  &bt BT_SEL 1    &bt BT_SEL 2  &none  &none       &none          &kp C_VOL_DN  &kp C_VOLUME_UP  &none  &none  &none  &none
-&none  &bt BT_SEL 3    &bt BT_SEL 4  &none  &none       &bootloader    &kp C_PREV    &kp C_NEXT       &none  &none  &none  &none
-                                     &none  &none       &none          &none         &none            &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &none  &sys_reset  &none          &kp C_PP      &kp C_MUTE       &none  &none  &none
+&bt BT_SEL 1    &bt BT_SEL 2  &none  &none       &none          &kp C_VOL_DN  &kp C_VOLUME_UP  &none  &none  &none
+&bt BT_SEL 3    &bt BT_SEL 4  &none  &none       &bootloader    &kp C_PREV    &kp C_NEXT       &none  &none  &bootloader
+                              &none  &none       &none          &none         &none            &none
             >;
         };
     };
