@@ -128,10 +128,10 @@
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp LS(N1)  &kp LS(N2)            &kp LS(N3)             &kp LS(N4)       &kp LS(N5)           &kp LS(N6)      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)     &none
-&none         &kp GRAVE   &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp EQUAL   &none       &none       &obj_operator  &none
-&bt BT_SEL 4  &kp TILDE   &kp PIPE              &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp UNDERSCORE  &kp PLUS    &none       &none       &arrow_func    &none
-                                                &none                  &none            &trans               &trans          &none       &none
+&kp LS(N1)  &kp LS(N2)            &kp LS(N3)             &kp LS(N4)       &kp LS(N5)           &kp LS(N6)      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&kp GRAVE   &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp EQUAL   &none       &none       &obj_operator
+&kp TILDE   &kp PIPE              &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp UNDERSCORE  &kp PLUS    &none       &none       &arrow_func
+                                  &none                  &none            &trans               &trans          &none       &none
             >;
         };
 
