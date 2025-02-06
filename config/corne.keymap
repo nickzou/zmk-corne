@@ -13,10 +13,10 @@
 #define ARROWS_L  2
 #define NUMBERS_L 3
 
-/*/ {
+/ {
     chosen { zmk,matrix-transform = &five_column_transform; };
 };
-*/
+
 
 / {
     behaviors {
